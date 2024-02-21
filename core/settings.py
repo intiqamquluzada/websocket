@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--t#25-tmlr_*w3i3@g(zlz4^8*o-u^0u)reu!o-5kcxq+8&2en
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost', 'intiqamquluzada.pythonanywhere.com']
 
 
 # Application definition
@@ -86,12 +86,8 @@ CHANNEL_LAYERS = {
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': '44**d4c3Aeg3Ag-CdEAFCdeE45BeA1gC',
-        'HOST': 'roundhouse.proxy.rlwy.net',
-        'PORT': '22493',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
