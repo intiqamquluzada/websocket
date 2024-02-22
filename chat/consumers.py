@@ -18,7 +18,7 @@ class ChatConsumer(WebsocketConsumer):
         print(self.user)
         if not self.user.is_anonymous:
             # If the user is authenticated, use their username
-            self.username = self.user.username
+            self.username = self.user.email
         else:
             # If the user is not authenticated, use a default value or handle as needed
             self.username = "Anonymous"

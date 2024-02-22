@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--t#25-tmlr_*w3i3@g(zlz4^8*o-u^0u)reu!o-5kcxq+8&2en
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost', 'intiqamquluzada.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1','localhost', '45.155.125.243']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'chat',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +70,9 @@ TEMPLATES = [
         },
     },
 ]
+
+AUTH_USER_MODEL = "accounts.MyUser"
+
 
 WSGI_APPLICATION = 'core.wsgi.application'
 ASGI_APPLICATION = 'core.asgi.application'
